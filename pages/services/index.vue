@@ -28,7 +28,7 @@
           <div class="relative">
             <img 
               v-if="service.image" 
-              :src="`http://localhost:1337${service.image.url}`" 
+              :src="`https://ladle-backend-production.up.railway.app${service.image.url}`" 
               :alt="service.Title" 
               class="w-full h-72 object-cover"
             >
@@ -78,10 +78,9 @@
 const { find } = useStrapi()
 
 // Services verilerini çekme
-const { data: services, pending } = await useAsyncData('services-list', () => 
-  find('services', { 
-    populate: '*'  // Tüm ilişkili alanları getir
-  })
+const { data: services } = await useAsyncData(
+  'services-list',
+  () => $fetch('https://ladle-backend-production.up.railway.app/api/services?populate=*')
 )
 
 const formatDescription = (desc) => {
