@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+
+# Nuxt build output
+.nuxt
+.nitro
+.cache
+dist
+
+# Misc
+.DS_Store
+
+# Local env files
+.env
+.env.local
