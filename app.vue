@@ -198,7 +198,7 @@ const isMenuOpen = ref(false)
 // İletişim verilerini çekme ve provide etme
 const { data: contact } = await useAsyncData(
   'contact-global',
-  () => $fetch('http://localhost:1337/api/contacts?populate=*')
+  () => $fetch('https://ladle-backend-production.up.railway.app/api/contacts?populate=*')
 )
 
 // İletişim verisini global olarak sağla
