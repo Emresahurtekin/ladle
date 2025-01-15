@@ -98,7 +98,7 @@
             <div class="relative">
               <img 
                 v-if="service.image" 
-                :src="`http://localhost:1337${service.image.url}`" 
+                :src="`https://ladle-backend-production.up.railway.app${service.image.url}`" 
                 :alt="service.Title" 
                 class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
               >
@@ -145,12 +145,12 @@ import { inject } from 'vue'
 // Anasayfa ve hizmetler verilerini çekme
 const { data: homepage } = await useAsyncData(
   'homepage',
-  () => $fetch('http://localhost:1337/api/homepage?populate=*')
+  () => $fetch('https://ladle-backend-production.up.railway.app/api/homepage?populate=*')
 )
 
 const { data: services } = await useAsyncData(
   'services',
-  () => $fetch('http://localhost:1337/api/services?populate=*')
+  () => $fetch('https://ladle-backend-production.up.railway.app/api/services?populate=*')
 )
 
 // İletişim verisini inject et
