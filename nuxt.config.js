@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   strapi: {
-    url: 'http://localhost:1337',
+    url: 'https://ladle-backend-production.up.railway.app',
     prefix: '/api',
     version: 'v4'
   },
