@@ -81,7 +81,7 @@
 // Contact verilerini çekme
 const { data: contact } = await useAsyncData(
   'contact',
-  () => $fetch('http://localhost:1337/api/contacts?populate=*')
+  () => $fetch('https://ladle-backend-production.up.railway.app/api/contacts?populate=*')
 )
 
 // Rich text formatı için yardımcı fonksiyon

@@ -20,7 +20,7 @@
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           ]"
         >
-          Tümü
+          Tümün
         </button>
         <button 
           v-for="category in categories" 
@@ -50,7 +50,7 @@
         >
           <img 
             v-if="item?.image?.url"
-            :src="`http://localhost:1337${item.image.url}`"
+            :src="`https://ladle-backend-production.up.railway.app${item.image.url}`"
             :alt="item?.title || 'Galeri resmi'"
             class="w-full h-64 object-cover transform transition-transform group-hover:scale-110"
           />
@@ -88,7 +88,7 @@ const { data: gallery } = await useAsyncData(
   'gallery',
   async () => {
     try {
-      const response = await $fetch('http://localhost:1337/api/galleries?populate=*')
+      const response = await $fetch('https://ladle-backend-production.up.railway.app/api/galleries?populate=*')
       console.log('API Yanıtı:', JSON.stringify(response, null, 2))
       isLoading.value = false
       return response
