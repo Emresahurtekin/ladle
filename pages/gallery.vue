@@ -17,11 +17,12 @@
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === 'all' 
               ? 'bg-yellow-400 text-gray-900' 
-              : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+              : 'bg-gray-3000 text-gray-600 hover:bg-gray-300'
           ]"
         >
           Tümünü
-
+ 
+          
 
 
 
@@ -34,7 +35,7 @@
           :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === category 
-              ? 'bg-yellow-500 text-gray-900' 
+              ? 'bg-yellow-500 text-gray-500' 
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           ]"
         >
