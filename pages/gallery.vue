@@ -20,7 +20,12 @@
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           ]"
         >
-          Tümün
+          Tümünü
+
+
+
+
+                  
         </button>
         <button 
           v-for="category in categories" 
