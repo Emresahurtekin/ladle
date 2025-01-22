@@ -4,12 +4,12 @@
     <div class="bg-gray-900 py-16">
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold text-white text-center mb-4">Galeri</h1>
-        <p class="text-xl text-gray-400 text-center">İş makinelerimiz ve projelerimizden görüntüler</p>
+        <p class="text-xl text-gray-300 text-center">İş makinelerimiz ve projelerimizden görüntüler</p>
       </div>
     </div>
 
     <!-- Filtreler -->
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-2 py-8">
       <div class="flex justify-center space-x-4 mb-8">
         <button 
           @click="selectedCategory = 'all'"
@@ -17,7 +17,7 @@
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === 'all' 
               ? 'bg-yellow-400 text-gray-900' 
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
           ]"
         >
           Tümünü
@@ -34,7 +34,7 @@
           :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === category 
-              ? 'bg-yellow-400 text-gray-900' 
+              ? 'bg-yellow-500 text-gray-900' 
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           ]"
         >
