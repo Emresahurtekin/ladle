@@ -39,7 +39,7 @@
 
       <!-- Galeri Grid --> 
       <div v-if="isLoading" class="text-center py-12">
-        <p class="text-gray-500">Yükleniyor...</p>
+        <p class="text-gray-500">Yükleniyor..</p>
       </div>
 
       <div v-else-if="filteredGallery && filteredGallery.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
