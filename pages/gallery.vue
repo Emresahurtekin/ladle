@@ -1,10 +1,10 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <div class="bg-gray-900 py-16">
+    <div class="bg-gray-900 py-20">
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold text-white text-center mb-4">Galeri</h1>
-        <p class="text-xl text-gray-400 text-center">
+        <p class="text-xl text-gray-500 text-center">
           İş makinelerimiz ve projelerimizden görüntüler
         </p>
       </div>
@@ -66,7 +66,7 @@
               <h3 class="text-white text-xl font-bold mb-2">
                 {{ item?.title || "Başlık yok" }}
               </h3>
-              <p class="text-gray-200">
+              <p class="text-gray-600">
                 {{ item?.category || "Kategori yok" }}
               </p>
             </div>
