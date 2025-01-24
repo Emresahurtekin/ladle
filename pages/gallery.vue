@@ -4,7 +4,7 @@
     <div class="bg-gray-900 py-16">
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold text-white text-center mb-4">Galeri</h1>
-        <p class="text-xl text-gray-400 text-center">
+        <p class="text-xl text-gray-900 text-center">
           İş makinelerimiz ve projelerimizden görüntüler
         </p>
       </div>
@@ -18,8 +18,8 @@
           :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === 'all'
-              ? 'bg-yellow-400 text-gray-800'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300',
+              ? 'bg-yellow-400 text-gray-300'
+              : 'bg-gray-200 text-gray-500 hover:bg-gray-300',
           ]"
         >
           Tümü
@@ -46,7 +46,7 @@
 
       <div
         v-else-if="filteredGallery && filteredGallery.length > 0"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
       >
         <div
           v-for="item in filteredGallery"
