@@ -4,12 +4,12 @@
     <div class="bg-gray-900 py-16">
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold text-white text-center mb-4">Galeri</h1>
-        <p class="text-xl text-gray-400 text-center">İş makinelerimiz ve projelerimizden görüntüler</p>
+        <p class="text-xl text-gray-300 text-center">İş makinelerimiz ve projelerimizden görüntüler</p>
       </div>
     </div>
 
     <!-- Filtreler -->
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-2 py-8">
       <div class="flex justify-center space-x-4 mb-8">
         <button 
           @click="selectedCategory = 'all'"
@@ -17,10 +17,14 @@
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === 'all' 
               ? 'bg-yellow-400 text-gray-900' 
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              : 'bg-gray-3000 text-gray-800 hover:bg-gray-300'
           ]"
         >
           Tümün
+ß
+
+
+                  
         </button>
         <button 
           v-for="category in categories" 
@@ -29,7 +33,7 @@
           :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === category 
-              ? 'bg-yellow-400 text-gray-900' 
+              ? 'bg-yellow-500 text-gray-500' 
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           ]"
         >
@@ -39,7 +43,7 @@
 
       <!-- Galeri Grid --> 
       <div v-if="isLoading" class="text-center py-12">
-        <p class="text-gray-500">Yükleniyor..</p>
+        <p class="text-gray-500">Yükleniyor...</p>
       </div>
 
       <div v-else-if="filteredGallery && filteredGallery.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
