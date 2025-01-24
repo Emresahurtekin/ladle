@@ -12,14 +12,14 @@
 
     <!-- Filtreler -->
     <div class="container mx-auto px-4 py-8">
-      <div class="flex justify-center space-x-4 mb-8">
+      <div class="flex justify-center space-x-4 mb-6">
         <button
           @click="selectedCategory = 'all'"
           :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === 'all'
               ? 'bg-yellow-400 text-gray-800'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300',
+              : 'bg-gray-200 text-gray-500 hover:bg-gray-300',
           ]"
         >
           Tümü
@@ -31,7 +31,7 @@
           :class="[
             'px-4 py-2 rounded-lg font-medium transition-colors',
             selectedCategory === category
-              ? 'bg-yellow-400 text-gray-900'
+              ? 'bg-yellow-400 text-gray-500'
               : 'bg-gray-200 text-gray-700 hover:bg-gray-300',
           ]"
         >
